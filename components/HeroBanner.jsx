@@ -1,12 +1,12 @@
 import React from 'react'
 import Link from 'next/link'
 
-const HeroBanner = () => {
+const HeroBanner = ({herobanner}) => {
   return (
     <div className='hero-banner-container'>
         <div>
             <p className="beats-solo">
-                SMALL TEXT
+                {herobanner.smallText}
             </p>
             <h3>
                 MID TEXT
