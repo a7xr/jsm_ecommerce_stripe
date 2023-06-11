@@ -10,6 +10,17 @@ const ProductDetails = ({ products, product }) => {
           <div className="image-container">
             <img src={urlFor(image && image[0])} alt="" srcset="" />
           </div>
+          {/* <div className="small-images-container">
+            {image?.map((item, i) => (
+              <img
+                src={urlFor(item)}
+                className=""
+                onMouseEnter=""
+                alt=""
+                srcset=""
+              />
+            ))}
+          </div> */}
         </div>
       </div>
     </div>
