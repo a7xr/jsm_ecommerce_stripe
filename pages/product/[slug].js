@@ -32,12 +32,13 @@ const ProductDetails = ({ products, product }) => {
           <h1>{name}</h1>
           <div className="reviews">
             <div>
-                <AiFillStar />
-                <AiFillStar />
-                <AiFillStar />
-                <AiFillStar />
-                <AiFillStar />
+              <AiFillStar />
+              <AiFillStar />
+              <AiFillStar />
+              <AiFillStar />
+              <AiOutlineStar />
             </div>
+            <p>(20)</p>
           </div>
         </div>
       </div>
