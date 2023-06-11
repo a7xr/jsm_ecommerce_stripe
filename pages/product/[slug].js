@@ -1,13 +1,14 @@
 import React from "react";
 import { client, urlFor } from "../../lib/client";
 
-const ProductDetails = ({product, products}) => {
+const ProductDetails = ({ products, product }) => {
+  const { image, name, details, price } = product;
   return (
     <div>
       <div className="product-detail-container">
         <div>
           <div className="image-container">
-            <img src="" alt="" srcset="" />
+            <img src={urlFor(image && image[0])} alt="" srcset="" />
           </div>
         </div>
       </div>
