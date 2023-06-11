@@ -28,6 +28,10 @@ export const getStaticPaths = async () => {
       slug: product.slug.current,
     },
   }));
+  return {
+    paths,
+    fallback: "blocking",
+  };
 };
 
 export const getStaticProps = async ({ params: { slug } }) => {
