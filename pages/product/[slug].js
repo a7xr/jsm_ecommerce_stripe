@@ -42,6 +42,7 @@ const ProductDetails = ({ products, product }) => {
           </div>
           <h4>Details: </h4>
           <p>{details}</p>
+          <p className="price">${price}</p>
         </div>
       </div>
     </div>
