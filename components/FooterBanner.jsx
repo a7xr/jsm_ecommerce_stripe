@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 import { urlFor } from '../lib/client'; 
 
-const FooterBanner = ({footerBanner: {discount, largeText1, largeText2, saleTime, smallText, midText, product, buttonText}}) => {
+const FooterBanner = ({footerBanner: {discount, largeText1, largeText2, saleTime, smallText, midText, desc, product, buttonText}}) => {
   return (
     <div
         className='footer-banner-container'
@@ -17,7 +17,16 @@ const FooterBanner = ({footerBanner: {discount, largeText1, largeText2, saleTime
                 
             </div>
             <div className="right">
-
+                <p>{smallText}</p>
+                <p>{midText}</p>
+                <p>{desc}</p>
+                <Link href={`/product/${product}`}>
+                    <button
+                        type="button"
+                    >
+                        {buttonText}
+                    </button>
+                </Link>
             </div>
         </div>
     </div>
