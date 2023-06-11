@@ -22,6 +22,9 @@ const ProductDetails = ({ products, product }) => {
             ))}
           </div> */}
         </div>
+        <div className="product-details-desc">
+            <h1>{name}</h1>
+        </div>
       </div>
     </div>
   );
