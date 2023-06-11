@@ -9,7 +9,7 @@ const HeroBanner = ({herobanner}) => {
                 {herobanner.smallText}
             </p>
             <h3>
-                MID TEXT
+                {herobanner.midText}
             </h3>
             <img src="" alt="headphones" className="hero-banner-image" />
             <div>
