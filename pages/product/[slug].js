@@ -1,7 +1,7 @@
 import React from "react";
 import { client, urlFor } from "../../lib/client";
 
-const ProductDetails = () => {
+const ProductDetails = ({product, products}) => {
   return (
     <div>
       <div className="product-detail-container">
