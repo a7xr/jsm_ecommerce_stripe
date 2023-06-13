@@ -12,6 +12,7 @@ import { useStateContext } from "../../context/StateContext";
 const ProductDetails = ({ products, product }) => {
   const { image, name, details, price } = product;
   const [index, setIndex] = useState(0);
+  const { decQty, incQty, qty } = useStateContext();
   return (
     <div>
       <div className="product-detail-container">
