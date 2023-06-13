@@ -7,6 +7,7 @@ import {
   AiOutlineStar,
 } from "react-icons/ai";
 import { Product } from "../../components";
+import { useStateContext } from "../../context/StateContext";
 
 const ProductDetails = ({ products, product }) => {
   const { image, name, details, price } = product;
@@ -16,15 +17,20 @@ const ProductDetails = ({ products, product }) => {
       <div className="product-detail-container">
         <div>
           <div className="image-container">
-            <img 
-                className="product-detail-image"
-                src={urlFor(image && image[index])} alt="" srcset="" />
+            <img
+              className="product-detail-image"
+              src={urlFor(image && image[index])}
+              alt=""
+              srcset=""
+            />
           </div>
           <div className="small-images-container">
             {image?.map((item, i) => (
               <img
                 src={urlFor(item)}
-                className={i === index ? 'small-image selected-image' : 'small-image'}
+                className={
+                  i === index ? "small-image selected-image" : "small-image"
+                }
                 onMouseEnter={() => setIndex(i)}
                 alt=""
                 srcset=""
