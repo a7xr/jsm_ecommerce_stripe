@@ -11,7 +11,7 @@ export const StateContext = ({ children }) => {
 
   const [qty, setQty] = useState(1);
   const onAdd = (product, quantity) => {
-    
+    const checkProductInCart = cartItems.find((item) => item._id === product._id)
   }
 
   const incQty = () => {
