@@ -22,7 +22,6 @@ const ProductDetails = ({ products, product }) => {
               className="product-detail-image"
               src={urlFor(image && image[index])}
               alt=""
-              srcset=""
             />
           </div>
           <div className="small-images-container">
@@ -34,7 +33,6 @@ const ProductDetails = ({ products, product }) => {
                 }
                 onMouseEnter={() => setIndex(i)}
                 alt=""
-                srcset=""
               />
             ))}
           </div>
