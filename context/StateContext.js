@@ -28,8 +28,11 @@ export const StateContext = ({ children }) => {
           };
       });
       setCartItems(updatedCartItems);
-      toast.success(`${qty} ${product.name} added to the cart`)
+    } else {
+      product.quantity = quantity;
+      setCartItems([...cartItems, { ...product }]);
     }
+    toast.success(`${qty} ${product.name} added to the cart`);
   };
 
   const incQty = () => {
