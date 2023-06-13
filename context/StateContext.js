@@ -10,6 +10,9 @@ export const StateContext = ({ children }) => {
   const [totalQuantities, setTotalQuantities] = useState();
 
   const [qty, setQty] = useState(1);
+  const onAdd = (product, quantity) => {
+    
+  }
 
   const incQty = () => {
     setQty((prevQty) => prevQty + 1);
