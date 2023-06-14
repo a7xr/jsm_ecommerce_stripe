@@ -55,6 +55,19 @@ const Cart = () => {
                         ${item.price}
                     </h4>
                   </div>
+                  <div className="flex bottom">
+                    <div>
+                        <p className="quantity-desc">
+                            <span className="minus" onClick={decQty}>
+                                <AiOutlineMinus />
+                            </span>
+                            <span className="num">{qty}</span>
+                            <span className="plus" onClick={incQty}>
+                                <AiOutlinePlus />
+                            </span>
+                        </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             ))}
