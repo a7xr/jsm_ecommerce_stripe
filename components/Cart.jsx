@@ -12,7 +12,9 @@ const Cart = () => {
   const {totalPrice, totalQuantities, cartItems, setShowCart} = useStateContext();
 
   return (
-    <div></div>
+    <div className='cart-wrapper' ref={cartRef}>
+
+    </div>
   )
 }
 
