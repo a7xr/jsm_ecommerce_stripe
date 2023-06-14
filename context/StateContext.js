@@ -41,8 +41,18 @@ export const StateContext = ({ children }) => {
   };
 
   const toggleCartItemQuantity = (id, value) => {
-    foundProduct = cartItems.find((item) => item._id)
-  }
+    foundProduct = cartItems.find((item) => item._id);
+    index = cartItems.findIndex((product) => product._id === id);
+
+    if (value === "inc") {
+      let newCartItems = [
+        ...cartItems,
+        { ...product, quantity: product.quantity + 1 },
+      ];
+      setCartItems(newCartItems);
+    } else if (value === "dec") {
+    }
+  };
 
   const incQty = () => {
     setQty((prevQty) => prevQty + 1);
