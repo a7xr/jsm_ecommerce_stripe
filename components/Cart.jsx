@@ -58,11 +58,11 @@ const Cart = () => {
                   <div className="flex bottom">
                     <div>
                         <p className="quantity-desc">
-                            <span className="minus" onClick={decQty}>
+                            <span className="minus" onClick="">
                                 <AiOutlineMinus />
                             </span>
-                            <span className="num">{qty}</span>
-                            <span className="plus" onClick={incQty}>
+                            <span className="num">0</span>
+                            <span className="plus" onClick="">
                                 <AiOutlinePlus />
                             </span>
                         </p>
