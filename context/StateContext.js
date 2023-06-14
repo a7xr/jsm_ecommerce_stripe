@@ -45,11 +45,10 @@ export const StateContext = ({ children }) => {
     index = cartItems.findIndex((product) => product._id === id);
 
     if (value === "inc") {
-      let newCartItems = [
+      setCartItems([
         ...cartItems,
         { ...product, quantity: product.quantity + 1 },
-      ];
-      setCartItems(newCartItems);
+      ]);
     } else if (value === "dec") {
     }
   };
