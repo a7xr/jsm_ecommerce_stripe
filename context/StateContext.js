@@ -44,7 +44,7 @@ export const StateContext = ({ children }) => {
     foundProduct = cartItems.find((item) => item._id);
     index = cartItems.findIndex((foundProduct) => foundProduct._id === id);
 
-    const newCartItems = cartItems.splice(index, 1)
+    const newCartItems = cartItems.filter((item) => item._id !== id)
     if (value === "inc") {
       setCartItems([
         ...newCartItems,
