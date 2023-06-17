@@ -53,6 +53,8 @@ export const StateContext = ({ children }) => {
     setCartItems(newCartItems);
   };
 
+  
+
   const toggleCartItemQuantity = (id, value) => {
     foundProduct = cartItems.find((item) => item._id === id);
     index = cartItems.findIndex((foundProduct) => foundProduct._id === id);
